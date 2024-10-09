@@ -21,13 +21,16 @@ const Dashboard = () => {
 
     const fetchCourses = async () => {
         try {
-            const response = await fetch('https://www.coursera.org/api/courses.v1');
+            const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.coursera.org/api/courses.v1'));
             if (!response.ok) throw new Error('Failed to fetch courses');
+            
             const data = await response.json();
-            const courses = data.elements.map((course, index) => ({
+            const allCourses = JSON.parse(data.contents).elements;
+            const courses = allCourses.slice(5, 11).map((course, index) => ({
                 id: index + 1,
-                title: course.title, 
+                title: course.name,
             }));
+            
             setCourses(courses);
         } catch (err) {
             setError(err.message);
@@ -35,6 +38,7 @@ const Dashboard = () => {
             setLoading(false);
         }
     };
+    
 
     useEffect(() => {
         fetchCourses();
@@ -45,7 +49,7 @@ const Dashboard = () => {
             <aside className="w-64 bg-gray-800 text-white h-screen p-4">
                 <h2 className="text-xl font-bold">EduTech+ Dashboard</h2>
                 <nav className="mt-4">
-                    <ul>
+                    <ul className='flex flex-col justify-start'>
                         <li><a href="#my-courses" className="block py-2 hover:bg-gray-700">My Courses</a></li>
                         <li><a href="#analytics" className="block py-2 hover:bg-gray-700">Analytics</a></li>
                         <li><a href="#account-settings" className="block py-2 hover:bg-gray-700">Account Settings</a></li>
