@@ -21,7 +21,7 @@ const Dashboard = () => {
 
     const fetchCourses = async () => {
         try {
-            const response = await fetch('https://cors-anywhere.herokuapp.com/https://www.coursera.org/api/courses.v1');
+            const response = await fetch('https://www.coursera.org/api/courses.v1');
             if (!response.ok) throw new Error('Failed to fetch courses');
             const data = await response.json();
             const courses = data.elements.map((course, index) => ({
