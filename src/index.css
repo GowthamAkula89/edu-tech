@@ -14,4 +14,10 @@
    @apply w-full h-32 lg:h-48 object-cover rounded-md mb-4 flex justify-center items-center text-white lg:text-5xl text-2xl 
 
   }
+  .category{
+    @apply block p-2  decoration-transparent rounded-md hover:text-white hover:bg-green-300 transform hover:translate-x-2 duration-500
+  }
+  .active{
+    @apply bg-green-500 text-white
+  }
 }
