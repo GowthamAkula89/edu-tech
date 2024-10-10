@@ -9,7 +9,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar, handleCategory, logout, categor
                     isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
                 } md:translate-x-0 transition-transform duration-300 ease-in-out z-20 md:static md:flex-shrink-0`}
             >
-                <h2 className="text-xl font-bold">EduTech+ Dashboard</h2>
+                <h2 className="text-lg font-bold text-blue-600">EduTech+ Dashborad</h2>
                 <nav className="mt-4">
                     <ul className='flex flex-col justify-start gap-5'>
                         <li><a href="#my-courses" className={`${category === "mycourses" ? "active" : ""} category`} onClick={() => handleCategory("mycourses")}>My Courses</a></li>
