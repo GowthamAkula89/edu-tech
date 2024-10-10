@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# EduTech+ Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+**EduTech+** is a responsive and dynamic educational platform built with React, Tailwind CSS, and OAuth authentication. It features a landing page for general users and a personalized dashboard for authenticated users. The dashboard integrates dynamic data from a public API and offers a course management interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. **Landing Page**:
+- **Navigation Bar**: Links to Home, About, Courses, and Contact sections.
+- **Hero Section**: Engaging headline with a call-to-action (CTA) button.
+- **Features Section**: Highlights three key features of EduTech+.
+- **Footer**: Placeholder links for social media, terms of service, and privacy policy.
 
-### `npm start`
+### 2. **Dashboard** (Authenticated Users Only):
+- **OAuth Authentication**: Sign in using Google OAuth for secure access.
+- **Personalized Greeting**: Users are greeted by name after authentication.
+- **Sidebar Navigation**: Links to My Courses, Analytics, Account Settings, etc.
+- **Dynamic API Integration**: Fetches public API data and displays it on the dashboard.
+- **Course Management**: UI elements to view, edit, and delete courses.
+- **Analytics Section**: Displays mock charts and data visualizations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
+- **Frontend**: React (JavaScript, JSX)
+- **Styling**: Tailwind CSS for modern, responsive UI
+- **OAuth**: Google OAuth for secure user authentication
+- **API Integration**: Public API to fetch dynamic data for the dashboard
+- **Charts**: Mock data visualizations using libraries like Chart.js or Recharts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
+To run this project locally, you will need:
+- **Node.js** (version 14 or higher)
+- **npm** for managing dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   git clone https://github.com/your-repo/edutech-plus.git
+2. **Navigate**
+    cd edutech-plus
+3. **Install dependencies**
+    npm install
+4. **Run Application**
+    npm start
