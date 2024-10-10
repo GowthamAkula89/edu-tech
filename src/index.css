@@ -15,7 +15,7 @@
 
   }
   .category{
-    @apply block p-2  decoration-transparent rounded-md hover:text-white hover:bg-green-300 transform hover:translate-x-2 duration-500
+    @apply block p-2  decoration-transparent rounded-md text-white hover:bg-green-300 transform hover:translate-x-2 duration-500 
   }
   .active{
     @apply bg-green-500 text-white
