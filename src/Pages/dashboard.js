@@ -1,9 +1,9 @@
-// Dashboard.js
 import React, { useState } from 'react';
 import { useAuth } from '../Utils/authContext';
 import CourseList from '../Components/courseList';
 import Sidebar from '../Components/sideBar';
 import { FiMenu, FiX } from 'react-icons/fi';
+import Analytics from '../Components/analytics';
 
 const Dashboard = () => {
     const { user, logout } = useAuth();
@@ -49,6 +49,7 @@ const Dashboard = () => {
                     <h2 className="text-xl font-semibold">My Courses</h2>
                     <CourseList />
                 </section>}
+                {category === "analytics" && <Analytics />}
             </main>
         </div>
     );
