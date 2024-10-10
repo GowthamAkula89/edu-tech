@@ -37,9 +37,9 @@ To run this project locally, you will need:
 
 1. **Clone the repository**:
    git clone https://github.com/your-repo/edutech-plus.git
-2. **Navigate**
+2. **Navigate**:
     cd edutech-plus
-3. **Install dependencies**
+3. **Install dependencies**:
     npm install
-4. **Run Application**
+4. **Run Application**:
     npm start
