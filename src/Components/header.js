@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const Header = () => {
+const Header = ({onClick}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#contact">Contact</a>
         </nav>
 
-        <div href="#signup" className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition cursor-pointer">
+        <div href="#signup" className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition cursor-pointer" onClick={onClick}>
           Get Started
         </div>
 

@@ -24,7 +24,7 @@ const LandingPage = () => {
 
   return(
     <div>
-      <Header/>
+      <Header onClick={handleGetStarted}/>
       <div className="h-full bg-gray-100 flex flex-col justify-around py-6">
         <div className="flex  flex-col items-center justify-center">
           <h1 className="text-5xl font-bold text-center">Welcome to EduTech+</h1>
